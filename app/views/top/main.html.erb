@@ -1,0 +1,7 @@
+<%= link_to 'ユーザー', users_path %>
+<% if current_user %>
+    <%= link_to 'ツイート', tweets_path %>
+    <%= link_to 'ログアウト', top_logout_path %>
+<% else %>
+    <%= link_to 'ログイン', top_login_path %>
+<% end %>
